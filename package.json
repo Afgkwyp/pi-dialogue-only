@@ -1,0 +1,24 @@
+{
+  "name": "pi-dialogue-only",
+  "version": "0.1.0",
+  "description": "Hide Pi tool execution logs and keep the TUI focused on user/assistant dialogue.",
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "tui"
+  ],
+  "license": "MIT",
+  "repository": "github:Afgkwyp/pi-dialogue-only",
+  "scripts": {
+    "test": "node --test test/dialogue-only.test.mjs"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions/dialogue-only.ts"
+    ]
+  }
+}
